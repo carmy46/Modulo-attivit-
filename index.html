@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo Attività</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modulo Attività</h1>
+        <form id="activityForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <div class="select-with-input">
+                    <select id="nome" required onchange="handleSelectChange(this, 'nomeCustom')">
+                        <option value="">Seleziona un nome</option>
+                        <option value="custom">+ Aggiungi nuovo nome</option>
+                        <option value="Adolfo">Adolfo</option>
+                        <option value="Alessio">Alessio</option>
+                        <option value="Bianca">Bianca</option>
+                        <option value="Brian">Brian</option>
+                        <option value="Carlo">Carlo</option>
+                        <option value="Carmelo">Carmelo</option>
+                        <option value="Elena">Elena</option>
+                        <option value="Erika">Erika</option>
+                        <option value="Eros">Eros</option>
+                        <option value="Gigi">Gigi</option>
+                        <option value="Gisenia">Gisenia</option>
+                        <option value="Gustavo">Gustavo</option>
+                        <option value="Hugo">Hugo</option>
+                        <option value="Jacquiline">Jacquiline</option>
+                        <option value="Jesus">Jesus</option>
+                        <option value="Karina">Karina</option>
+                        <option value="Katy">Katy</option>
+                        <option value="Keidy">Keidy</option>
+                        <option value="Manuel">Manuel</option>
+                        <option value="Mariella">Mariella</option>
+                        <option value="Mery">Mery</option>
+                        <option value="Mimmo">Mimmo</option>
+                        <option value="Nahed">Nahed</option>
+                        <option value="Nandito">Nandito</option>
+                        <option value="Nita">Nita</option>
+                        <option value="Pablo">Pablo</option>
+                        <option value="Renato">Renato</option>
+                        <option value="Rocco">Rocco</option>
+                        <option value="Rodika">Rodika</option>
+                        <option value="Rolando">Rolando</option>
+                        <option value="Rossella">Rossella</option>
+                        <option value="Yovanna">Yovanna</option>
+                        <option value="Yovany">Yovany</option>
+                    </select>
+                    <input type="text" id="nomeCustom" class="custom-input hidden" placeholder="Inserisci nuovo nome">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+            </div>
+
+            <div class="form-group">
+                <label for="luogo">Luogo:</label>
+                <div class="select-with-input">
+                    <select id="luogo" required onchange="handleSelectChange(this, 'luogoCustom')">
+                        <option value="">Seleziona un luogo</option>
+                        <option value="custom">+ Aggiungi nuovo luogo</option>
+                        <option value="Ale Chiappa">Ale Chiappa</option>
+                        <option value="Alevax">Alevax</option>
+                        <option value="Aluk">Aluk</option>
+                        <option value="Amico Cristiano">Amico Cristiano</option>
+                        <option value="Architec">Architec</option>
+                        <option value="Arese">Arese</option>
+                        <option value="B&B Moscova">B&B Moscova</option>
+                        <option value="B&B Nicolas">B&B Nicolas</option>
+                        <option value="B&B Niguarda">B&B Niguarda</option>
+                        <option value="B&B Veronesi">B&B Veronesi</option>
+                        <option value="Bar Radetsky">Bar Radetsky</option>
+                        <option value="Capannone">Capannone</option>
+                        <option value="Caresmed">Caresmed</option>
+                        <option value="Cassone">Cassone</option>
+                        <option value="Ceccarelli">Ceccarelli</option>
+                        <option value="Condominio Via Candiani">Condominio Via Candiani</option>
+                        <option value="Condominio Via Monte Rosa">Condominio Via Monte Rosa</option>
+                        <option value="Condominio Via Morandi">Condominio Via Morandi</option>
+                        <option value="Condominio Via Veniero">Condominio Via Veniero</option>
+                        <option value="Condomini Via Vialba">Condomini Via Vialba</option>
+                        <option value="Cristiano">Cristiano</option>
+                        <option value="Da Amicis">Da Amicis</option>
+                        <option value="Dama">Dama</option>
+                        <option value="Daniele Casa (Bovisa)">Daniele Casa (Bovisa)</option>
+                        <option value="Edit">Edit</option>
+                        <option value="Enzo Radetsky">Enzo Radetsky</option>
+                        <option value="E-solution">E-solution</option>
+                        <option value="Ferlazzo">Ferlazzo</option>
+                        <option value="Geraldine">Geraldine</option>
+                        <option value="Green Opificio">Green Opificio</option>
+                        <option value="Leone">Leone</option>
+                        <option value="Magazzino">Magazzino</option>
+                        <option value="Nicolas casa">Nicolas casa</option>
+                        <option value="Nunzia">Nunzia</option>
+                        <option value="Panettiera">Panettiera</option>
+                        <option value="Parcheggio Via Colecchio">Parcheggio Via Colecchio</option>
+                        <option value="Pattumiere">Pattumiere</option>
+                        <option value="Poli design">Poli design</option>
+                        <option value="Polihub">Polihub</option>
+                        <option value="Portineria tararossa">Portineria tararossa</option>
+                        <option value="Portineria Via Losanna">Portineria Via Losanna</option>
+                        <option value="Portineria Via Tadino">Portineria Via Tadino</option>
+                        <option value="Residence">Residence</option>
+                        <option value="Rob de matt">Rob de matt</option>
+                        <option value="Sabrina casa">Sabrina casa</option>
+                        <option value="Sabrina ufficio">Sabrina ufficio</option>
+                        <option value="Sara">Sara</option>
+                        <option value="Scala Regaldi">Scala Regaldi</option>
+                        <option value="Schiaffino">Schiaffino</option>
+                        <option value="Ufficio cavallotti">Ufficio cavallotti</option>
+                        <option value="Ufficio Daniele">Ufficio Daniele</option>
+                        <option value="Via Canonica">Via Canonica</option>
+                        <option value="Via saffi">Via saffi</option>
+                    </select>
+                    <input type="text" id="luogoCustom" class="custom-input hidden" placeholder="Inserisci nuovo luogo">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tempo">Tempo Impiegato:</label>
+                <div class="select-with-input">
+                    <select id="tempo" required onchange="handleSelectChange(this, 'tempoCustom')">
+                        <option value="">Seleziona le ore di lavoro</option>
+                        <option value="custom">⏱️ Inserisci tempo personalizzato</option>
+                        <option value="0.5">½ ora (30 minuti)</option>
+                        <option value="1">1 ora</option>
+                        <option value="1.5">1 ora e ½</option>
+                        <option value="2">2 ore</option>
+                        <option value="2.5">2 ore e ½</option>
+                        <option value="3">3 ore</option>
+                        <option value="3.5">3 ore e ½</option>
+                        <option value="4">4 ore</option>
+                        <option value="4.5">4 ore e ½</option>
+                        <option value="5">5 ore</option>
+                        <option value="5.5">5 ore e ½</option>
+                        <option value="6">6 ore</option>
+                        <option value="6.5">6 ore e ½</option>
+                        <option value="7">7 ore</option>
+                        <option value="7.5">7 ore e ½</option>
+                        <option value="8">8 ore (giornata intera)</option>
+                    </select>
+                    <input type="number" 
+                           id="tempoCustom" 
+                           class="custom-input hidden" 
+                           placeholder="Inserisci le ore (es: 1.5 per un'ora e mezza)" 
+                           min="0" 
+                           step="0.5">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="attivita">Attività:</label>
+                <div class="select-with-input">
+                    <select id="attivita" required onchange="handleSelectChange(this, 'attivitaCustom')">
+                        <option value="">Seleziona un'attività</option>
+                        <option value="custom">+ Aggiungi nuova attività</option>
+                        <option value="Acquisto Materiale">Acquisto Materiale</option>
+                        <option value="Cambio asciugamani">Cambio asciugamani</option>
+                        <option value="Carico/Scarico">Carico/Scarico</option>
+                        <option value="Facchinaggio">Facchinaggio</option>
+                        <option value="Muratura">Muratura</option>
+                        <option value="Pattumiera">Pattumiera</option>
+                        <option value="Pittura">Pittura</option>
+                        <option value="Portineria">Portineria</option>
+                        <option value="Pulizia">Pulizia</option>
+                        <option value="Pulizia fino">Pulizia fino</option>
+                        <option value="Pulizia moquette">Pulizia moquette</option>
+                        <option value="Pulizia Vetri">Pulizia Vetri</option>
+                        <option value="Sgombero">Sgombero</option>
+                        <option value="Smaltimento">Smaltimento</option>
+                        <option value="Taglio Erba">Taglio Erba</option>
+                        <option value="Trasloco">Trasloco</option>
+                    </select>
+                    <input type="text" id="attivitaCustom" class="custom-input hidden" placeholder="Inserisci nuova attività">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="note">Note:</label>
+                <textarea id="note" 
+                          name="note"
+                          placeholder="Inserisci eventuali note aggiuntive" 
+                          rows="3"
+                          class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit">Invia</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
